@@ -1,65 +1,93 @@
 *{
     box-sizing: border-box;
-    margin-top: 0;
-    padding: 0;
+    /* margin-top: 0;
+    padding: 0; */
 }
 
 body{
     direction: rtl;
     text-align: right;
-    margin: 0;
 }
 
 header.headB{
-    background-image: linear-gradient(rgb(144,144,144) 93%, white);
-    height: px;
+    background-image: linear-gradient(rgb(144,144,144) 95%, rgb(238, 238, 238));
+    height: 75px;
     width: 100%;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
+span.homeimg > img{
+   margin-top: 10px;
+   margin-right: 55px;
+   width: 12px;
+}
+
+span.pazLogo > img{
+    margin-top: 0px;
+    padding: 0px;
+    width: 100px;
+}
 nav.navBar{
     display: flex;
-    width: 900px;
+    width: 90%;
     margin: auto;
-    justify-content: space-between;
+    padding-top: 40px;
 }
 
 div[class^="hoverCon"] > li.mainB{
     list-style: none;
     border-right: 1px solid;
-    font-size: 15px;
+    font-size: 13px;
     padding: 5px;
     margin-right: 5px;
+    color: white;
+    font-family: Arial;
 }
 
 div[class^=hoverCon-]{
     position: relative;
+    padding: 10px;
 }
 
+div.hoverList > ul{
+    padding: 0px;
+    margin: 0;
+} 
 div.hoverList > ul > li.navItm{
     list-style: none;
-    display: inline;
+    font-family: Arial;
+    width: 75px;
+    color: white;
+    font-size: 11px;
+    padding: 0px;
+    border-bottom: solid 1px rgb(238, 238, 238);
 }
 
 div.hoverList{
     display: none;
     position: absolute;
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
-    background-image: linear-gradient(white, rgb(144,144,144) 93%);    background-color: rgb(144,144,144);
-    border-bottom: 1px gray solid;
-    padding: 5px;
-
+    background-image: linear-gradient(to top, rgb(144,144,144) 98%, rgb(238,238,238));
+    border-bottom: 1px rgb(216, 212, 212) solid;
+    padding: 4px;
+    margin-top: 0;
 }
 
 div[class ^= "hoverCon"]:hover > div[class ^= "hoverList"]{
     display: block;
 }
 
-header > nav.navBar{
+div[class ^= "hoverList"] > ul > li.navItm:hover{
+    color:blue;
+    background-color: rgb(238, 238, 238);
+    size: 13px;
+    
+}
+
+/* header > nav.navBar{
     height: 33px;
     margin-top: 53px;  
     width: 900px;
       
-} 
+}  */
