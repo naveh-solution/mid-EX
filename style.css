@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0;
+}
+
+body{
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+}
+
+header.headB{
+    background-image: linear-gradient(rgb(144,144,144) 93%, white);
+    height: px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav.navBar{
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+div[class^="hoverCon"] > li.mainB{
+    list-style: none;
+    border-right: 1px solid;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+div[class^=hoverCon-]{
+    position: relative;
+}
+
+div.hoverList > ul > li.navItm{
+    list-style: none;
+    display: inline;
+}
+
+div.hoverList{
+    display: none;
+    position: absolute;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    background-image: linear-gradient(white, rgb(144,144,144) 93%);    background-color: rgb(144,144,144);
+    border-bottom: 1px gray solid;
+    padding: 5px;
+
+}
+
+div[class ^= "hoverCon"]:hover > div[class ^= "hoverList"]{
+    display: block;
+}
+
+header > nav.navBar{
+    height: 33px;
+    margin-top: 53px;  
+    width: 900px;
+      
+} 
