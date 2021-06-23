@@ -21,9 +21,9 @@ header{
 }
 
 span.homeimg > img{
-   margin-top: 10px;
-   margin-right: 55px;
-   width: 12px;
+    margin-top: 10px;
+    margin-right: 55px;
+    width: 12px;
 }
 
 span.pazLogo > img{
@@ -88,7 +88,7 @@ div[class ^= "hoverList"] > ul > li.navItm:hover{
     size: 13px;    
 }
 
- div[class ^= "mainCon-"]{
+div[class ^= "mainCon-"]{
     width: 900px;
     margin: 0 auto;
 }
@@ -99,13 +99,13 @@ section[class^="mainRow-"]{
     display: flex;
     width: 900px;
     justify-content: center;
-
+    
 }
 section[class^="mainCol-"]{
     /* display: flex; */
     flex-direction: column;
-    border: black solid 2px;
     flex: 1;
+    margin: 25px 7px; 
 }
 
 div[class*="Pic"]  > img[class*="img"]{
@@ -122,15 +122,47 @@ div.textInImg{
     /* margin-top: 220px;
     margin-right: 15px;*/
     /* padding: 10px;  */
-    left: 60px;
+    left: 38px;
     bottom: 6px;
     background-color: rgba(126,125,124, 0.9);
     font-family: Arial;
     color:white;
     border-bottom-right-radius: 5px;
     font-size: 13px;
-    width: 228px;
-    /* height: 77px; */
+    width: 248px;
+    height: 77px;
+}
+div.textInImg > a.readMore{
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    color: white;
+}
+
+div.textInImg > a.readMore:hover{
+    color: darkblue;
+    display: block;
+}
+div.textInImg > a.readMore > img:hover{
+    src: url("imgs/read_more_blue.png");
+}
+
+
+/*footer*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+footer > div.footerBG{
+    background-image: linear-gradient( rgb(238, 238, 238), rgb(144,144,144) 95%);
+    width: 100%;
+}
+
+nav.footerBN > ul li{
+    list-style: none;
+    margin: 0;
+    display: inline-block;
 }
 
 h3{
@@ -141,10 +173,11 @@ p{
     margin: 0;
     padding-top: 3px;
     padding-right: 5px;
+    font-size: 13px;
 }
 /* header > nav.navBar{
     height: 33px;
     margin-top: 53px;  
     width: 900px;
-      
+    
 }  */
