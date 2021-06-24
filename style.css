@@ -26,7 +26,7 @@ span.homeimg > img{
     width: 12px;
 }
 
-span.pazLogo > img{
+div.pazLogo > img{
     margin-top: 0px;
     padding: 0px;
     width: 100px;
@@ -119,9 +119,6 @@ div[class*="Pic"] {
 
 div.textInImg{
     position: absolute;
-    /* margin-top: 220px;
-    margin-right: 15px;*/
-    /* padding: 10px;  */
     left: 38px;
     bottom: 6px;
     background-color: rgba(126,125,124, 0.9);
@@ -147,23 +144,92 @@ div.textInImg > a.readMore > img:hover{
     src: url("imgs/read_more_blue.png");
 }
 
+/*mid section*/
+
+/* section[class*="-Section"] > section[class*="-second"]{
+    width: 292px;
+    border: 2px solid black;
+} */
+
+section[class*="-second"] > section[class^="mainCol-2"]{
+    flex-direction: column;
+    width: 292px;
+    margin-top: 10px;
+    border: rgb(216, 212, 212) solid;
+    flex:1;
+    border-top-right-radius: 15px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+div[class*="Pic"]  > img[class*="Img"]{
+    width: 250px;
+    border: 5px;
+    padding: 0 5px;
+}
+
+div[class*="Pic"] >  h3 {
+    border-bottom: solid 3px rgb(237,237,237);
+    font-size: 14px;
+    color: rgb(87,87,124);
+}
+
+section > div.mapPic > img.mapImg{
+    width: 73px;
+} 
+
 
 /*footer*/
 
 footer{
     position: fixed;
     bottom: 0;
-}
-footer > div.footerBG{
-    background-image: linear-gradient( rgb(238, 238, 238), rgb(144,144,144) 95%);
+    background-image: linear-gradient( rgb(238, 238, 238) 3%, rgb(144,144,144));
     width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 38px;
 }
-
-nav.footerBN > ul li{
+div.mainCon-Footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+nav.footerBN > ul.footerL  li{
     list-style: none;
     margin: 0;
+    padding: 0px 5px;
+    padding-bottom: 5px;
     display: inline-block;
+    border-left: 2px solid white;
+    font-size: 14px;
 }
+
+nav.footerBN > ul.footerL > li > a{
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+}
+nav.footerBN > ul.footerL > li > a:hover{
+    color:darkblue;
+    text-decoration: underline;
+}
+
+li.facelogo > a > img{
+    width: 18px;
+}
+
+nav.footerBN > ul.footerL{
+    margin: 5px 0;
+}
+
+/* nav.footerBN > ul{
+    text-decoration: none;
+    color: white;
+} */
 
 h3{
     margin: 0;
