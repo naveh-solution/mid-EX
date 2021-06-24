@@ -28,7 +28,7 @@ div.srchB > input.searchin{
     width: 132;
     font-size: 16px;
     font-family: Arial;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 7px;
     padding: 0;
     border: solid 1px rgb(216, 212, 212);
     padding-bottom: 5px;
@@ -40,26 +40,27 @@ div.srchB > label >img{
     margin-top: 10px;
 }
 
-/* span.homeimg > img{
-    margin-bottom: 50px;
-    margin-right: 55px;
+div.homeimg > img{
+    margin-top:20px;
+    margin-right: 5px;
     width: 12px;
 }
 
-div.pazLogo > img{
-    margin-bottom: 15px;
-    padding: 0px;
-    width: 100px;
-} */
+div.pazLogo > a.logo {
+    padding-right: 50px;
+    float: right;
+}
 nav.navBar{
     display: flex;
     width: 900;
     margin: auto;
+    z-index: 2;
 }
 
 div[class^=hoverCon-]{
     position: relative;
     padding: 10px;
+    z-index: 2;
 }
 
 div[class^="hoverCon"] > li.mainB{
@@ -124,12 +125,12 @@ section[class^="mainCol-"]{
     /* display: flex; */
     flex-direction: column;
     flex: 1;
-    margin: 25px 7px; 
+    margin: 5px 7px; 
 }
 
 div[class*="Pic"]  > img[class*="img"]{
     width: 293px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 10px;
 }
 
 div[class*="Pic"] {
