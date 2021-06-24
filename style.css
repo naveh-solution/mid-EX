@@ -20,8 +20,28 @@ header{
     margin: 0;
 }
 
-span.homeimg > img{
-    margin-top: 0px;
+div[class*=-Header] > div.srchB{
+    margin-right: 640px;
+}
+
+div.srchB > input.searchin{
+    width: 132;
+    font-size: 16px;
+    font-family: Arial;
+    border-top-right-radius: 15px;
+    padding: 0;
+    border: solid 1px rgb(216, 212, 212);
+    padding-bottom: 5px;
+    height: 19px;
+}
+
+div.srchB > label >img{
+    width: 19px;
+    margin-top: 10px;
+}
+
+/* span.homeimg > img{
+    margin-bottom: 50px;
     margin-right: 55px;
     width: 12px;
 }
@@ -30,12 +50,11 @@ div.pazLogo > img{
     margin-bottom: 15px;
     padding: 0px;
     width: 100px;
-}
+} */
 nav.navBar{
     display: flex;
     width: 900;
     margin: auto;
-    padding-top: 40px;
 }
 
 div[class^=hoverCon-]{
@@ -172,8 +191,9 @@ div[class*="Pic"]  > img[class*="Img"]{
 div[class*="Pic"] >  h3 {
     border-bottom: solid 3px rgb(237,237,237);
     font-size: 14px;
-    color: rgb(87,87,124);
+    color: rgb(87,87,87);
     padding: 10px 12px;
+    font-family: Arial;
 }
 
 section.mainRow-second:last-child{
